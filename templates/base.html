@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title></title>
+        <title>{{ title }} Events</title>
     </head>
 
     <body>
@@ -8,5 +8,9 @@
             <li><a href="/events">Home</a></li>
             <li><a href="/events/new">New Event</a></li>
         </ul>
+        <hr>
+        {% block content %}
+
+        {% endblock %}
     </body>
 </html>
