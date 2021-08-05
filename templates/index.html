@@ -3,9 +3,10 @@
 {% block content %}
 
     <h1>My Event List</h1>
+    <span><img id=balloon src="static/balloons.png" alt="logo"></span>
     <hr>
     {% for event in events %}
-    <div>
+    <div class="event-container">
         <p>
             <b>{{event.name_of_event}}: {{event.date}}
         </p>
